@@ -1,0 +1,22 @@
+:root {
+  /* Colour */
+  --bone: #ece7df;
+  --bone-deep: #e6ddd0;
+  --ink: #0d0d0d;
+  --charcoal: #191817;
+  --text: #2a2724;
+  --muted: #5d5851;
+  --cream: #f6f2ea;
+  --line: rgba(13, 13, 13, 0.3);
+  --line-light: rgba(246, 242, 234, 0.55);
+
+  /* Type */
+  --font-display: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+  --font-script: 'Nothing You Could Do', 'Segoe Script', 'Bradley Hand', cursive;
+
+  /* Layout */
+  --gutter: clamp(16px, 3.6vw, 48px);
+  --header-h: 60px;
+  --max: 1440px;
+}
