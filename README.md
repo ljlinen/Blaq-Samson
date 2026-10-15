@@ -1,4 +1,4 @@
-# Black Samson
+# Blaq Samson
 
 Vite (vanilla JS) site. Responsive, no framework.
 
@@ -18,7 +18,7 @@ index.html                  page markup (all sections)
 public/
   favicon.svg
   images/                   <- PUT YOUR IMAGES HERE
-    hero/  story/  categories/  lifestyle/  reviews/
+    hero/  story/  story2/  categories/  lookbook/  lifestyle/  reviews/
 src/
   main.js                   entry point
   config/
@@ -27,7 +27,7 @@ src/
   js/                       one small file per feature
     images.js  nav.js  hero-slider.js  testimonials.js  newsletter.js
   styles/                   one stylesheet per section
-    variables.css  base.css  header.css  hero.css  story.css
+    variables.css  base.css  header.css  hero.css  story.css lookbook.css
     categories.css  lifestyle.css  reviews.css  footer.css
 ```
 
@@ -37,12 +37,14 @@ Add files to `public/images/<folder>/` with these names (or edit `src/config/ima
 
 | Slot | File |
 | --- | --- |
-| Hero slide 1 / 2 / 3 | `hero/hero-1.jpg`, `hero/hero-2.jpg`, `hero/hero-3.jpg` |
+| Hero slides 1–4 | `hero/hero-1.jpg` … `hero/hero-4.jpg` |
 | Story collage (large) | `story/story-hoodie-back.jpg` |
 | Story collage (pocket) | `story/story-pocket.jpg` |
 | Story collage (chain tee) | `story/story-chain-tee.jpg` |
 | Story tall image | `story/story-embroidery.jpg` |
+| Story 2 (mirrored) | `story2/story2-main.jpg`, `story2-detail.jpg`, `story2-closeup.jpg`, `story2-tall.jpg` |
 | Categories | `categories/hoodies.jpg`, `t-shirts.jpg`, `pants.jpg`, `accessories.jpg` |
+| Lookbook (6) | `lookbook/look-1.jpg` … `look-6.jpg` |
 | Lifestyle banner | `lifestyle/lifestyle-banner.jpg` |
 | Reviews | `reviews/review-1.jpg`, `review-2.jpg`, `review-3.jpg` |
 

@@ -2,7 +2,7 @@
 export const TESTIMONIALS = [
   {
     quote:
-      'The quality is crazy. Feels premium and it actually fits well. Black Samson really knows what they’re doing.',
+      'The quality is crazy. Feels premium and it actually fits well. Blaq Samson really knows what they’re doing.',
     author: 'Lerato M.',
   },
   {

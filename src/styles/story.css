@@ -153,3 +153,75 @@
     justify-self: stretch;
   }
 }
+
+/* =========================================================
+   Mirrored variant (second story section)
+   DOM order: tall image | copy | collage  — no reordering needed on desktop
+   ========================================================= */
+.story--reverse {
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 0.9fr) minmax(0, 1.2fr);
+}
+.story--reverse .story__copy {
+  justify-self: center;
+}
+.story--reverse .story__tall {
+  justify-self: start;
+}
+.story--reverse .story__tall figcaption {
+  right: auto;
+  left: 14px;
+  text-align: left;
+}
+.story--reverse .story__visual {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+.story--reverse .story__notes {
+  order: 2;
+  text-align: left;
+}
+.story--reverse .story__notes li {
+  transform: rotate(8deg);
+}
+
+.collage--mirror .collage__item--main {
+  left: 34%;
+  transform: rotate(3deg);
+}
+.collage--mirror .collage__item--pocket {
+  left: 0;
+  transform: rotate(-5deg);
+}
+.collage--mirror .collage__item--chain {
+  left: 15%;
+  transform: rotate(3deg);
+}
+
+@media (max-width: 1000px) {
+  .story--reverse {
+    grid-template-columns: 1fr 1fr;
+  }
+  .story--reverse .story__visual {
+    order: -1;
+  }
+  .story--reverse .story__tall {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 640px) {
+  .story--reverse {
+    grid-template-columns: 1fr;
+  }
+  .story--reverse .story__visual {
+    grid-template-columns: 1fr;
+  }
+  .story--reverse .story__notes {
+    order: 2;
+  }
+  .story--reverse .story__notes li {
+    transform: rotate(-4deg);
+  }
+  .story--reverse .story__tall {
+    justify-self: stretch;
+  }
+}
